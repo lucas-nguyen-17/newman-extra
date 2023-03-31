@@ -1,0 +1,19 @@
+{
+  "name": "newman-extra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.4",
+    "moment-timezone": "^0.5.42",
+    "newman": "^5.3.2",
+    "newman-reporter-htmlextra": "^1.22.11",
+    "path": "^0.12.7"
+  }
+}

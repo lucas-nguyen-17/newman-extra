@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "99da96ca-74d9-4edc-8297-e14a4753703f",
+		"name": "Postman-Newman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1289545"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Correct equal\", () => {\r",
+							"    pm.expect(0).eql(0);\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Wrong equal\", () => {\r",
+							"    pm.expect(0).eql(1);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?foo=bar",
+					"host": [
+						"https://postman-echo.com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "foo",
+							"value": "bar"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
